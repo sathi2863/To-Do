@@ -1,0 +1,8 @@
+## JSX-এ সরাসরি for loop বা if-else লিখতে পারো না—কারণ JSX নিজে JavaScript-এর সম্পূর্ণ syntax না। JSX মূলত JavaScript-এর মধ্যে HTML-এর মতো UI লেখার একটা syntax। JSX-এর { } এর ভিতরে JavaScript expression লেখা যায়
+
+JSX-এর ভিতরে সরাসরি for loop use করা যায় না কারণ for একটা statement। 
+তার পরিবর্তে .map() ব্যবহার করি, কারণ map() একটা expression এবং একটা নতুন array return করে।
+
+JSX-এর {} মূলত JavaScript expression-এর জন্য, কিন্তু if, for, while হলো statement—তাই এগুলো সরাসরি JSX-এর মধ্যে লেখা যায় না।
+
+52 min.
