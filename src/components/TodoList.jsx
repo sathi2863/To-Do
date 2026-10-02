@@ -4,8 +4,10 @@ import initialTodos from "../Data/initialTodos";
 
 export default function TodoList(){
     const [todos, setTodos] = useState(initialTodos);
-    const todoArray = [];
 
+    
+    /* use for loop
+    const todoArray = [];
     for(let i = 0; i< todos.length; i++){
         const todoItem = (
         <li>
@@ -15,11 +17,19 @@ export default function TodoList(){
 
         todoArray.push(todoItem)
     }
+*/
     return (
         <ul>
-           {todoArray}
+     {todos.map((todo) => (
+        <li key={todo.id}>{<Todo todo={todo}/>}</li>
+     ))} 
+     </ul>
+
+         // use for loop
+        // <ul>
+        //    {todoArray}
             
-        </ul>
+        // </ul>
 
     )
 }

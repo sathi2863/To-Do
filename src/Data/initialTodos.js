@@ -10,7 +10,7 @@ const initialTodos = [
         done: true,
     },
     {
-        id: 2,
+        id: 3,
         title: "Learn JavaScript",
         done: false,
     }
